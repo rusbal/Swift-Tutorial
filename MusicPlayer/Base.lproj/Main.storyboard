@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7E4-YX-Fm0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7E4-YX-Fm0">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -60,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="601" y="-557"/>
+            <point key="canvasLocation" x="527" y="-561"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="UqD-Dn-mc1">
@@ -92,31 +92,44 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pev-dG-cIl" id="2eV-zK-AfF">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="▶️" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G27-wX-fuE">
-                                                    <rect key="frame" x="13" y="11" width="23" height="23"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▶️" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G27-wX-fuE">
+                                                    <rect key="frame" x="8" y="11" width="23" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="23" id="70W-c5-Xqm"/>
-                                                        <constraint firstAttribute="width" constant="23" id="Y0A-A3-D4O"/>
+                                                        <constraint firstAttribute="width" constant="23" id="Uab-Q9-Cbz"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ryd-dB-0fM">
-                                                    <rect key="frame" x="44" y="12" width="548" height="23"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Of The Song" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ryd-dB-0fM">
+                                                    <rect key="frame" x="39" y="11" width="465" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1.99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCZ-fy-tzD">
+                                                    <rect key="frame" x="512" y="11" width="80" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="h2m-PM-XwF"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="G27-wX-fuE" firstAttribute="leading" secondItem="2eV-zK-AfF" secondAttribute="leadingMargin" constant="5" id="02m-zc-7iD"/>
-                                                <constraint firstItem="Ryd-dB-0fM" firstAttribute="leading" secondItem="G27-wX-fuE" secondAttribute="trailing" constant="8" id="N3l-NE-wKz"/>
-                                                <constraint firstItem="Ryd-dB-0fM" firstAttribute="trailing" secondItem="2eV-zK-AfF" secondAttribute="trailingMargin" id="nAe-es-ekH"/>
+                                                <constraint firstAttribute="centerY" secondItem="Ryd-dB-0fM" secondAttribute="centerY" id="Exw-Um-k2U"/>
+                                                <constraint firstAttribute="trailing" secondItem="aCZ-fy-tzD" secondAttribute="trailing" constant="8" id="VvA-68-hX5"/>
+                                                <constraint firstAttribute="centerY" secondItem="G27-wX-fuE" secondAttribute="centerY" id="m4D-2f-Dov"/>
+                                                <constraint firstItem="Ryd-dB-0fM" firstAttribute="leading" secondItem="G27-wX-fuE" secondAttribute="trailing" constant="8" id="rC1-vs-Wag"/>
+                                                <constraint firstItem="aCZ-fy-tzD" firstAttribute="leading" secondItem="Ryd-dB-0fM" secondAttribute="trailing" constant="8" id="tLR-YU-gRD"/>
+                                                <constraint firstAttribute="centerY" secondItem="aCZ-fy-tzD" secondAttribute="centerY" id="v5p-iS-5Xx"/>
+                                                <constraint firstItem="G27-wX-fuE" firstAttribute="leading" secondItem="2eV-zK-AfF" secondAttribute="leading" constant="8" id="y7D-jM-nl7"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="playIcon" destination="G27-wX-fuE" id="ibb-NM-h8W"/>
+                                            <outlet property="priceLabel" destination="aCZ-fy-tzD" id="bc1-3H-ROK"/>
                                             <outlet property="titleLabel" destination="Ryd-dB-0fM" id="qX4-bm-UFf"/>
                                         </connections>
                                     </tableViewCell>
@@ -148,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pYL-YU-PSv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1233" y="-558"/>
+            <point key="canvasLocation" x="1233" y="-561"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YCI-QZ-c2A">
@@ -166,7 +179,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nVz-HO-V1X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-22" y="-557"/>
+            <point key="canvasLocation" x="-252" y="-561"/>
         </scene>
     </scenes>
 </document>

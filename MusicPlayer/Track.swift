@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 class Track {
     
     var title: String
@@ -30,22 +31,23 @@ class Track {
                 if let kind = trackInfo["kind"] as? String {
                     if kind=="song" {
                         
-                        var trackPrice = trackInfo["trackPrice"] as? String
+                        var trackPrice = trackInfo["trackPrice"] as? Double
                         var trackTitle = trackInfo["trackName"] as? String
                         var trackPreviewUrl = trackInfo["previewUrl"] as? String
                         
                         if(trackTitle == nil) {
                             trackTitle = "Unknown"
                         }
-                        else if(trackPrice == nil) {
-                            println("No trackPrice in \(trackInfo)")
-                            trackPrice = "?"
+                        if(trackPrice == nil) {
+                            trackPrice = 0.0
                         }
-                        else if(trackPreviewUrl == nil) {
+                        if(trackPreviewUrl == nil) {
                             trackPreviewUrl = ""
                         }
                         
-                        var track = Track(title: trackTitle!, price: trackPrice!, previewUrl: trackPreviewUrl!)
+                        let strTrackPrice = NSString(format: "%.2f", trackPrice!) as String
+                        
+                        var track = Track(title: trackTitle!, price: strTrackPrice, previewUrl: trackPreviewUrl!)
                         tracks.append(track)
                         
                     }

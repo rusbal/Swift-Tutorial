@@ -43,6 +43,7 @@ class DetailsViewController: UIViewController, APIControllerProtocol, UITableVie
         let cell = tableView.dequeueReusableCellWithIdentifier("TrackCell") as TrackCell
         let track = tracks[indexPath.row]
         cell.titleLabel.text = track.title
+        println("Price: \(track.price)")
         cell.playIcon.text = "▶️"
         
         return cell
